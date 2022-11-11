@@ -67,10 +67,10 @@ const NavBar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <div className="bg-perfume_red-light ">
-      <div className="max-w-7xl mx-auto grid grid-cols-4 text-white gap-8 text-sm ">
+    <div className="hidden lg:block bg-perfume_red-light">
+      <div className="lg:max-w-6xl xl:max-w-7xl mx-auto grid grid-cols-4 text-white gap-8 text-sm ">
         <div
-          className="flex col-span-1 items-center p-4 justify-between bg-[#2b2a2b] cursor-pointer relative"
+          className="flex col-span-1 items-center p-4 justify-between bg-[#2b2a2b] cursor-pointer relative z-20"
           onClick={() => setOpenMenu(!openMenu)}
         >
           {openMenu ? (
@@ -122,7 +122,7 @@ const NavBar = () => {
         <div className="flex col-span-3 gap-8 items-center">
           {listMenu.map((item, index) => (
             <div
-              className="px-3 hover:bg-[#a82b2f] h-full flex items-center duration-200"
+              className="px-3 hover:bg-[#a82b2f] h-full flex items-center duration-200 active:bg-red-700 cursor-pointer"
               key={index}
             >
               <Link href={item.link}>

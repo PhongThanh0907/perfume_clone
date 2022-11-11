@@ -10,7 +10,11 @@
         @apply cursor-pointer text-perfume_red-light duration-200
     }
     .style-group{
-        @apply absolute opacity-0 top-0 w-0 h-[248px] 
+        @apply absolute opacity-0 top-0 w-0 h-[248px] bg-perfume_red-bg
     }
     
+}
+
+.slick-arrow::before {
+    color: #9c191e !important;
 }

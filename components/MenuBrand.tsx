@@ -19,7 +19,7 @@ const MenuBrand = () => {
     <div className="bg-white relative">
       <div
         className={
-          "justify-between flex items-center mx-auto px-4 py-6 md:max-w-7xl gap-4"
+          "justify-between flex items-center mx-auto px-4 py-6 lg:max-w-6xl xl:max-w-7xl gap-4"
         }
       >
         <div className="md:hidden" onClick={() => setOpenMenuMobile(true)}>

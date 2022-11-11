@@ -1,7 +1,14 @@
 import Head from "next/head";
+import Banner from "../components/Banner";
+import BestSeller from "../components/BestSeller";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import GenderProduct from "../components/GenderProduct";
 import Header from "../components/Header";
+import HotProduct from "../components/HotProduct";
 import MenuBrand from "../components/MenuBrand";
 import NavBar from "../components/NavBar";
+import Support from "../components/Support";
 
 export default function Home() {
   return (
@@ -18,6 +25,20 @@ export default function Home() {
         <MenuBrand />
 
         <NavBar />
+
+        <Banner />
+
+        <BestSeller />
+
+        <HotProduct />
+
+        <GenderProduct />
+
+        <Support />
+
+        <Contact />
+
+        <Footer />
       </main>
     </div>
   );
