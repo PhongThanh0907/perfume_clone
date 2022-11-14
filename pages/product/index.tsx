@@ -4,12 +4,17 @@ import Banner from "../../public/banner-nuochoajpg.jpg";
 import Layout from "../../components/Layout";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import ItemBestProduct from "../../components/ItemBestProduct";
-
+import InputRange from "react-input-range";
+import "react-input-range/lib/css/index.css";
 const Product = () => {
   const [modalGender, setModalGender] = useState<boolean>(false);
   const [modalBrand, setModalGenderBrand] = useState<boolean>(false);
   const [modalPrice, setModalPrice] = useState<boolean>(false);
   const [modalScent, setModalScent] = useState<boolean>(false);
+  const [value, setValue] = useState({
+    min: 2,
+    max: 10000,
+  });
   const onClose = () => {
     setModalGender(false);
     setModalGenderBrand(false);
@@ -143,7 +148,14 @@ const Product = () => {
 
               {modalPrice ? (
                 <div className="absolute left-0 right-0 -bottom-36 top-14 text-gray-400 z-10 bg-white shadow-xl rounded-md opacity-100 duration-300 ease-in-out">
-                  <div className="p-4 space-y-2"></div>
+                  <div className="p-6">
+                    <InputRange
+                      maxValue={100000000}
+                      minValue={0}
+                      value={value}
+                      onChange={(value) => setValue(value)}
+                    />
+                  </div>
                 </div>
               ) : (
                 <div className="absolute left-0 right-0 bottom-10 -top-14 duration-300 opacity-0 ease-in-out"></div>
