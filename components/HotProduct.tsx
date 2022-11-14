@@ -26,7 +26,7 @@ const HotProduct = () => {
     <div className="lg:max-w-6xl xl:max-w-7xl bg-white mx-auto p-4 lg:p-8">
       <div className="text-center">
         <h2>Sản phẩm Nổi Bật</h2>
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 px-8 lg:px-32 py-4">
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 lg:px-32 py-4">
           <div
             className={
               status === 1

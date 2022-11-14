@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="py-14">
-      <div className="grid grid-cols-4 max-w-7xl mx-auto gap-4">
+      <div className="grid grid-cols-1 px-2 lg:px-0 lg:grid-cols-4 xl:max-w-7xl mx-auto lg:gap-4">
         <div>
-          <h2 className="font-semibold py-6 ">THÔNG TIN LIÊN HỆ</h2>
+          <h2 className="font-semibold py-2 lg:py-6 ">THÔNG TIN LIÊN HỆ</h2>
           <h3 className="font-semibold py-2 text-sm">
             Phong Perfume – Nước Hoa Authentic
           </h3>

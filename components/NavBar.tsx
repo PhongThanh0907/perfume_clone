@@ -9,7 +9,7 @@ const NavBar = () => {
   const listMenu = [
     {
       title: "TƯ VẤN CHỌN",
-      link: "/",
+      link: "/product",
     },
     {
       title: "THƯƠNG HIỆU",

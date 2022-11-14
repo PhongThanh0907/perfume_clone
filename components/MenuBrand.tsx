@@ -60,22 +60,26 @@ const MenuBrand = () => {
             <span className="hidden md:inline">Đã Lưu</span>
           </div>
           <div className="hover:hover-default">
-            <UserIcon className="h-6 mx-auto" />
-            <span className="hidden md:inline">Tài khoản</span>
+            <Link href="/login">
+              <UserIcon className="h-6 mx-auto" />
+              <span className="hidden md:inline">Tài khoản</span>
+            </Link>
           </div>
           <div className="hover:hover-default relative">
-            <ShoppingBagIcon className="h-6 mx-auto" />
-            <span className="hidden md:inline">Giỏ hàng</span>
-            <div className="right-0 absolute -top-2 md:right-3">
-              <h4 className="px-1 bg-yellow-300 rounded-full mx-auto">0</h4>
-            </div>
+            <Link href="/cart">
+              <ShoppingBagIcon className="h-6 mx-auto" />
+              <span className="hidden md:inline">Giỏ hàng</span>
+              <div className="right-0 absolute -top-2 md:right-3">
+                <h4 className="px-1 bg-yellow-300 rounded-full mx-auto">0</h4>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
 
       {/* Menu Mobile */}
       {openMenuMobile ? (
-        <div className="bg-black text-white visible fixed w-[80%] top-0 px-4 py-6 duration-300 ease-in-out h-[100vh] opacity-100 translate-x-[0px]">
+        <div className="bg-black text-white visible z-20 h-[60vh] fixed w-[80%] top-0 px-4 py-6 duration-300 ease-in-out opacity-100 translate-x-[0px]">
           <div className="flex border border-gray-700 rounded justify-between py-2 px-3">
             <input
               className="bg-black focus:outline-none text-gray-500"
@@ -130,7 +134,7 @@ const MenuBrand = () => {
           </div>
         </div>
       ) : (
-        <div className="bg-black text-white visible w-[80%] fixed top-0 px-4 py-6 translate-x-[-100%] duration-300 h-[100vh] ease-in-out"></div>
+        <div className="bg-black text-white visible z-20 w-[80%] fixed top-0 px-4 py-6 translate-x-[-100%] duration-300 h-[60vh] ease-in-out"></div>
       )}
     </div>
   );

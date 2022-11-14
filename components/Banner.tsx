@@ -28,7 +28,7 @@ const Banner = () => {
               key={index}
               src={item}
               alt="banner"
-              className="h-full rounded-md "
+              className="h-full rounded-md"
             />
           ))}
         </Carousel>
