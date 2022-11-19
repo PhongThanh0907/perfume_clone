@@ -21,6 +21,7 @@ const BestSelles = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
   };
+
   return (
     <div className="py-8">
       <div className="lg:max-w-6xl xl:max-w-7xl bg-yellow-400 mx-auto p-4 lg:p-8 rounded">

@@ -2,7 +2,7 @@ import React from "react";
 
 const CheckoutWizard = ({ activeStep = 0 }) => {
   return (
-    <div className="flex mb-5 flex-wrap lg:max-w-7xl mx-auto">
+    <div className="flex mb-5 flex-wrap lg:max-w-7xl mx-auto re">
       {[
         "Đăng Nhập",
         "Địa Chỉ Giao Hàng",
